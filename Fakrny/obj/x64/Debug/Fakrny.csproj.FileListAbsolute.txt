@@ -1,0 +1,14 @@
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Debug\Fakrny.exe.config
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Debug\Fakrny.exe
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Debug\Fakrny.pdb
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Debug\Guna.UI.dll
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Debug\Guna.UI2.dll
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Debug\Fakrny.add_form.resources
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Debug\Fakrny.Fakrny.resources
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Debug\Fakrny.my_code_fakrny.resources
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Debug\Fakrny.Properties.Resources.resources
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Debug\Fakrny.csproj.GenerateResource.cache
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Debug\Fakrny.csproj.CoreCompileInputs.cache
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Debug\Fakrny.csproj.CopyComplete
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Debug\Fakrny.exe
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Debug\Fakrny.pdb

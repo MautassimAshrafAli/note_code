@@ -1,0 +1,24 @@
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Release\Fakrny.exe.config
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Release\Fakrny.exe
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Release\Fakrny.pdb
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Release\Bunifu_UI_v1.5.3.dll
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Release\FastColoredTextBox.dll
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Release\Guna.UI.dll
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Release\Guna.UI2.dll
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Release\FastColoredTextBox.pdb
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Release\FastColoredTextBox.xml
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.save_edit_fakrny.resources
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.remove_form.resources
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.add_form.resources
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.Fakrny.resources
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.my_code_fakrny.resources
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.Properties.Resources.resources
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.csproj.GenerateResource.cache
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.csproj.CoreCompileInputs.cache
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.csproj.CopyComplete
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.exe
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.pdb
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Release\NEER UI.dll
+C:\Users\ashra\Desktop\Fakrny\Fakrny\bin\x64\Release\SimpleWifi.dll
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.csprojAssemblyReference.cache
+C:\Users\ashra\Desktop\Fakrny\Fakrny\obj\x64\Release\Fakrny.show_user_img.resources

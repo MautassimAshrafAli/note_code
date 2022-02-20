@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\CefSharp.Common.97.1.61\build\CefSharp.Common.props" Condition="Exists('..\packages\CefSharp.Common.97.1.61\build\CefSharp.Common.props')" />
+  <Import Project="..\packages\cef.redist.x86.97.1.6\build\cef.redist.x86.props" Condition="Exists('..\packages\cef.redist.x86.97.1.6\build\cef.redist.x86.props')" />
+  <Import Project="..\packages\cef.redist.x64.97.1.6\build\cef.redist.x64.props" Condition="Exists('..\packages\cef.redist.x64.97.1.6\build\cef.redist.x64.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17EF0C47-9E80-4402-9733-89FB0EB768BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>note_code</RootNamespace>
+    <AssemblyName>note_code</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp, Version=97.1.61.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.97.1.61\lib\net452\CefSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.Core, Version=97.1.61.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.97.1.61\lib\net452\CefSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.WinForms, Version=97.1.61.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.WinForms.97.1.61\lib\net462\CefSharp.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox, Version=2.16.26.0, Culture=neutral, PublicKeyToken=fb8aa12b994ef61b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FastColoredTextBox\bin\Debug\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NEER UI">
+      <HintPath>..\..\NEER UI.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleWifi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SimpleWifi.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Extensions.4.3.1\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_form_temp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="add_form_temp.Designer.cs">
+      <DependentUpon>add_form_temp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="favorit_pages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="favorit_pages.Designer.cs">
+      <DependentUpon>favorit_pages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kill_procces.cs" />
+    <Compile Include="min_list.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="min_list.Designer.cs">
+      <DependentUpon>min_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="save_edir_note_code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="save_edir_note_code.Designer.cs">
+      <DependentUpon>save_edir_note_code.cs</DependentUpon>
+    </Compile>
+    <Compile Include="remove_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="remove_form.Designer.cs">
+      <DependentUpon>remove_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_form.Designer.cs">
+      <DependentUpon>add_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectBlur.cs" />
+    <Compile Include="note_code_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="note_code_main.Designer.cs">
+      <DependentUpon>note_code_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="my_note_code.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="my_note_code.Designer.cs">
+      <DependentUpon>my_note_code.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetDoubleBuffering.cs" />
+    <Compile Include="show_user_img.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="show_user_img.Designer.cs">
+      <DependentUpon>show_user_img.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_form_temp.resx">
+      <DependentUpon>add_form_temp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="favorit_pages.resx">
+      <DependentUpon>favorit_pages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="min_list.resx">
+      <DependentUpon>min_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="save_edir_note_code.resx">
+      <DependentUpon>save_edir_note_code.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="remove_form.resx">
+      <DependentUpon>remove_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_form.resx">
+      <DependentUpon>add_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="note_code_main.resx">
+      <DependentUpon>note_code_main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="my_note_code.resx">
+      <DependentUpon>my_note_code.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="show_user_img.resx">
+      <DependentUpon>show_user_img.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_stack_overflow_50px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_github_50px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_quora_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\768px-Stack_Exchange_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tutorialspoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codeproject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_developer_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_l_s_w_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_r_s_w_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_home_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YouTube-Emblem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_globe_20px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_globe_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_favorites_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_favorites_35px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_features_list_57px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_split_table_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_full_screen_40px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\cef.redist.x64.97.1.6\build\cef.redist.x64.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x64.97.1.6\build\cef.redist.x64.props'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x86.97.1.6\build\cef.redist.x86.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x86.97.1.6\build\cef.redist.x86.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.97.1.61\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.97.1.61\build\CefSharp.Common.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.97.1.61\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.97.1.61\build\CefSharp.Common.targets'))" />
+  </Target>
+  <Import Project="..\packages\CefSharp.Common.97.1.61\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.97.1.61\build\CefSharp.Common.targets')" />
+</Project>
